@@ -43,5 +43,6 @@ namespace Contacts.Controllers
       Contact.ClearAll();
       return View();
     }
+
   }
 }
