@@ -17,5 +17,15 @@ namespace Contacts.Controllers
     {
       return View();
     }
+
+    [HttpPost("/recent_added_contact")]
+    public ActionResult Recently_Added()
+    {
+      string nameInput = Request.Form["contact-name"];
+      string phoneNumberInput = Request.Form["phone-number"];
+      string addressInput = Request.Form["address"];
+      Contact newContact = new Contact(nameInput, phoneNumberInput, addressInput);
+      return View(newContact);
+    }
   }
 }

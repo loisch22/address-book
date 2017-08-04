@@ -5,11 +5,11 @@ namespace Contacts.Models
   public class Contact
   {
     private string _contactName;
-    private int _phoneNumber;
+    private string _phoneNumber;
     private string _address;
     private static List<Contact> contactList = new List<Contact> ();
 
-    public Contact(string contactName, int phoneNumber, string address)
+    public Contact(string contactName, string phoneNumber, string address)
     {
       _contactName = contactName;
       _phoneNumber = phoneNumber;
@@ -25,11 +25,11 @@ namespace Contacts.Models
     {
       _contactName = contactName;
     }
-    public int GetPhoneNumber()
+    public string GetPhoneNumber()
     {
       return _phoneNumber;
     }
-    public void SetPhoneNumber(int phoneNumber)
+    public void SetPhoneNumber(string phoneNumber)
     {
       _phoneNumber = phoneNumber;
     }
