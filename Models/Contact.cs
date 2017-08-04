@@ -7,6 +7,7 @@ namespace Contacts.Models
     private string _contactName;
     private string _phoneNumber;
     private string _address;
+    private int _id;
     private static List<Contact> _contactList = new List<Contact> ();
 
     public Contact(string contactName, string phoneNumber, string address)
@@ -15,6 +16,7 @@ namespace Contacts.Models
       _phoneNumber = phoneNumber;
       _address = address;
       _contactList.Add(this);
+      _id = _contactList.Count;
     }
 
     public string GetContactName()
@@ -40,6 +42,14 @@ namespace Contacts.Models
     public void SetAddress(string address)
     {
       _address = address;
+    }
+    public int GetId()
+    {
+      return _id;
+    }
+    public static Contact Find(int searchId)
+    {
+      return _contactList[searchId-1];
     }
     public static List<Contact> GetAllContacts()
     {

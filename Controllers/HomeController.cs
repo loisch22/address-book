@@ -14,13 +14,13 @@ namespace Contacts.Controllers
     }
 
     [HttpGet("/contact/add")]
-    public ActionResult Add_Contact()
+    public ActionResult ContactAdd()
     {
       return View();
     }
 
     [HttpPost("/contact/new")]
-    public ActionResult Recently_Added()
+    public ActionResult ContactNew()
     {
       string nameInput = Request.Form["contact-name"];
       string phoneNumberInput = Request.Form["phone-number"];
@@ -29,8 +29,16 @@ namespace Contacts.Controllers
       return View(newContact);
     }
 
+    [HttpGet("/contact/{id}")]
+    public ActionResult ContactDetail(int id)
+    {
+      Contact contact = Contact.Find(id);
+      return View(contact);
+
+    }
+
     [HttpGet("/contact/clear")]
-    public ActionResult Contacts_Clear()
+    public ActionResult ContactsClear()
     {
       Contact.ClearAll();
       return View();
