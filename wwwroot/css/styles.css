@@ -111,9 +111,9 @@ h2 {
 .exit-clear {
   background-color: #bcd478;
   padding: 15px 35px 15px 35px;
-  margin-right: 5%;
   font-size: 30px;
   letter-spacing: 3px;
+  float: right;
 }
 .exit:hover, .exit-clear:hover {
   background-color: #7f9a58;
