@@ -1,6 +1,12 @@
 body {
+  vertical-align: baseline;
   background-image: url("/img/writing.jpg");
-
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
