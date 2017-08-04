@@ -9,7 +9,8 @@ namespace Contacts.Controllers
     [HttpGet("/")]
     public ActionResult Index()
     {
-      return View();
+      List<Contact> addedContacts = Contact.GetAllContacts();
+      return View(addedContacts);
     }
 
     [HttpGet("/add_contact")]

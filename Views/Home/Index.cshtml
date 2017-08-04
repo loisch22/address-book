@@ -4,8 +4,12 @@
 
 <h1>Keep Track of Your Contacts</h1>
 
-<ul>
-  <li></li>
-</ul>
+@foreach(var contact in Model)
+{
+  <ul>
+    <li>@contact.GetContactName()</li>
+    <hr>
+  </ul>
+}
 
 <a href="/add_contact"><button class="btn btn-default">Create New Contact</button></a>
