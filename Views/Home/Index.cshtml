@@ -2,16 +2,23 @@
   Layout = "_Layout";
 }
 
-<h1>Keep Track of Your Contacts</h1>
+<h1>Address Book</h1>
 
-@foreach(var contact in Model)
-{
-  <ul>
-    <a href="/contact/@contact.GetId()"><li>@contact.GetContactName()</li></a>
-    <hr>
-  </ul>
-}
+<div class="container">
+    <h2>Keep Track of Your Contacts</h2>
 
-<a href="/contact/add"><button class="btn btn-default">Create New Contact</button></a>
+    <div class="contact-list">
+      @foreach(var contact in Model)
+      {
+        <ul>
+          <a href="/contact/@contact.GetId()"><li>@contact.GetContactName()</li></a>
+          <hr>
+        </ul>
+      }
+    </div>
+    <div class="well index-well">
+      <a href="/contact/add"><button class="btn btn-default create-new">Create New Contact</button></a>
 
-<a href="/contact/clear"><button class="btn btn-default">Delete All Contacts</button></a>
+      <a href="/contact/clear"><button class="btn btn-default delete-all">Delete All Contacts</button></a>
+  </div>
+</div>

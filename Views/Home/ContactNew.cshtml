@@ -2,10 +2,14 @@
   Layout = "_Layout";
 }
 
-<h1>Your Recently Added Contact</h1>
+<h1>Address Book</h1>
+
+<h2>Your Recently Added Contact</h2>
 
 <p><strong>Name:</strong> @Model.GetContactName()</p>
 <p><strong>Phone Number:</strong> @Model.GetPhoneNumber()</p>
 <p><strong>Address:</strong> @Model.GetAddress()</p>
+
+<a href="/contact/add"><button class="btn btn-default">Create New Contact</button></a>
 
 <a href="/"><button class="btn btn-default">Exit</button></a>

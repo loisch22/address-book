@@ -1,0 +1,37 @@
+body {
+  background-image: url("/img/writing.jpg");
+
+}
+
+h1 {
+  font-size: 100px;
+  letter-spacing: 10px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+h2 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.index-well {
+  text-align: center;
+  padding: 60px 100px 60px 100px;
+  margin-top: 50px;
+}
+.create-new {
+  background-color: green;
+  padding: 15px 35px 15px 35px;
+  margin-right: 5%;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+.delete-all {
+  background-color: red;
+  padding: 15px 35px 15px 35px;
+  margin-right: 5%;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
