@@ -7,14 +7,14 @@ namespace Contacts.Models
     private string _contactName;
     private string _phoneNumber;
     private string _address;
-    private static List<Contact> contactList = new List<Contact> ();
+    private static List<Contact> _contactList = new List<Contact> ();
 
     public Contact(string contactName, string phoneNumber, string address)
     {
       _contactName = contactName;
       _phoneNumber = phoneNumber;
       _address = address;
-      contactList.Add(this);
+      _contactList.Add(this);
     }
 
     public string GetContactName()
@@ -43,7 +43,11 @@ namespace Contacts.Models
     }
     public static List<Contact> GetAllContacts()
     {
-      return contactList;
+      return _contactList;
+    }
+    public static void ClearAll()
+    {
+      _contactList.Clear();
     }
   }
 }
