@@ -3,41 +3,150 @@ body {
   background-image: url("/img/writing.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-attachment: fixed;
   width: 100vw;
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #c3b091;
 }
 
 h1 {
   font-size: 100px;
-  letter-spacing: 10px;
+  letter-spacing: 15px;
   text-align: center;
+  margin: 6% 8% 0 8%;
   padding-top: 40px;
   padding-bottom: 30px;
+  background-color: #ffffff;
+  opacity: .7;
 }
 h2 {
   font-size: 40px;
   letter-spacing: 5px;
   margin-bottom: 30px;
   text-align: center;
+  color: 	#ffffff;
+  background: #422b23;
+  opacity: .7;
+  font-weight: bold;
+  border: solid 3px #422b23;
+  padding: 15px 40px 15px 40px;
 }
 .index-well {
   text-align: center;
   padding: 60px 100px 60px 100px;
   margin-top: 50px;
+  opacity: .8;
 }
 .create-new {
-  background-color: green;
+  background-color: #98ccc0;
   padding: 15px 35px 15px 35px;
   margin-right: 5%;
   font-size: 30px;
   letter-spacing: 3px;
 }
+.create-new-add {
+  background-color: #98ccc0;
+  padding: 15px 35px 15px 35px;
+  margin-right: 5%;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.create-new:hover, .create-new-add:hover {
+  background-color: #71a091;
+  color: #ffffff;
+  border: solid 4px #71a091;
+}
 .delete-all {
-  background-color: red;
+  background-color: #d9c2ba;
   padding: 15px 35px 15px 35px;
   margin-right: 5%;
   font-size: 30px;
   letter-spacing: 3px;
+}
+.delete-all:hover {
+  background-color: #e26872;
+  color: #ffffff;
+  border: solid 4px #e26872;
+}
+.form-well {
+  opacity: .8;
+}
+.form-add {
+  font-size: 20px;
+  padding: 20px;
+}
+.labels {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+#contact-name, #phone-number, #address {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.add-new {
+  background-color: #ffd592;
+  padding: 15px 35px 15px 35px;
+  margin-right: 5%;
+  font-size: 20px;
+  letter-spacing: 3px;
+  opacity: .9;
+}
+.add-new:hover {
+  background-color: #ffc566;
+  color: #ffffff;
+  border: solid 4px #ffc566;
+}
+.exit {
+  background-color: #bcd478;
+  padding: 10px 35px 10px 35px;
+  margin-bottom: 15%;
+  font-size: 25px;
+  letter-spacing: 4px;
+  float: right;
+  opacity: .9;
+}
+.exit-clear {
+  background-color: #bcd478;
+  padding: 15px 35px 15px 35px;
+  margin-right: 5%;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+.exit:hover, .exit-clear:hover {
+  background-color: #7f9a58;
+  color: #ffffff;
+  border: solid 4px #7f9a58;
+}
+.well-confirm, .well-details {
+  opacity: .8;
+  padding: 30px;
+}
+.well-confirm p, .well-details p {
+  font-size: 20px;
+  text-align: justify;
+}
+.well-contact {
+  margin-left: 40%;
+  margin-right: 40%;
+  padding: 5px;
+  background-color: #e3d0bc;
+  opacity: .8;
+}
+.contact-list {
+  list-style-type: none;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 0;
+  color: #422b23;
+}
+.contact-list:active, .contact-list:visited {
+  color: #422b23;
+}
+.contact-list:hover {
+  font-weight: bolder;
+  color: #422b23;
 }

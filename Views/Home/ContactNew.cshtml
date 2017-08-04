@@ -4,12 +4,16 @@
 
 <h1>Address Book</h1>
 
-<h2>Your Recently Added Contact</h2>
+<div class="container">
+    <h2>Your Recently Added Contact</h2>
 
-<p><strong>Name:</strong> @Model.GetContactName()</p>
-<p><strong>Phone Number:</strong> @Model.GetPhoneNumber()</p>
-<p><strong>Address:</strong> @Model.GetAddress()</p>
+  <div class="well well-confirm">
+    <p><strong>Name:</strong> @Model.GetContactName()</p>
+    <p><strong>Phone Number:</strong> @Model.GetPhoneNumber()</p>
+    <p><strong>Address:</strong> @Model.GetAddress()</p>
+  </div>
 
-<a href="/contact/add"><button class="btn btn-default">Create New Contact</button></a>
+  <a href="/contact/add"><button class="btn btn-default create-new-add">Create New Contact</button></a>
 
-<a href="/"><button class="btn btn-default">Exit</button></a>
+  <a href="/"><button class="btn btn-default exit">Cancel</button></a>
+</div>

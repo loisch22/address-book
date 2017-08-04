@@ -7,15 +7,14 @@
 <div class="container">
     <h2>Keep Track of Your Contacts</h2>
 
-    <div class="contact-list">
       @foreach(var contact in Model)
       {
-        <ul>
-          <a href="/contact/@contact.GetId()"><li>@contact.GetContactName()</li></a>
-          <hr>
-        </ul>
+        <div class="well well-contact">
+          <ul class="contact-list">
+            <a href="/contact/@contact.GetId()" class="contact-list"><li>@contact.GetContactName()</li></a>
+          </ul>
+        </div>
       }
-    </div>
     <div class="well index-well">
       <a href="/contact/add"><button class="btn btn-default create-new">Create New Contact</button></a>
 
