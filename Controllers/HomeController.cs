@@ -40,8 +40,9 @@ namespace Contacts.Controllers
     [HttpGet("/contact/delete")]
     public ActionResult ContactDelete()
     {
-      Contact contactDelete = Contact.GetId();
-      
+      List<Contact> contactId = Contact.GetId();
+      contactId = contactId.DeleteContact();
+      return View();
     }
 
     [HttpGet("/contact/clear")]
