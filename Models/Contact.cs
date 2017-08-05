@@ -59,5 +59,9 @@ namespace Contacts.Models
     {
       _contactList.Clear();
     }
+    public static void DeleteContact()
+    {
+      return Contact.Remove();
+    }
   }
 }

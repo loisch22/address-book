@@ -37,6 +37,13 @@ namespace Contacts.Controllers
 
     }
 
+    [HttpGet("/contact/delete")]
+    public ActionResult ContactDelete()
+    {
+      Contact contactDelete = Contact.GetId();
+      
+    }
+
     [HttpGet("/contact/clear")]
     public ActionResult ContactsClear()
     {
